@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME</title>
+</head>
+<body>
+    <div id='hi'>THe time is <span id='time'> </span></div>
+</body>
+
+<script>
+    function greet(name){
+        console.log("this is phani"+name);
+    }
+  timeout=  setTimeout(greet,3000,"bannu");
+  console.log(timeout)
+ interval= setInterval(greet, 3);
+ clearInterval(interval)
+
+function time(){
+    time=new Date();
+    console.log('time');
+    document.getElementById('time').innerHTML=time
+}
+setInterval(time,1000);
+</script>
+</html>

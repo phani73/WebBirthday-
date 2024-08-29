@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>events in js</title>
+    
+</head>
+<body>
+    <h1>
+        MY events
+    </h1>
+    <div id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quaerat culpa nam rerum 
+        itaque voluptatibus similique earum aperiam quis.
+         Libero natus quia, aut sit tempore ipsa excepturi expedita eius incidunt?
+    </div>
+</body>
+<button id="btn" onclick="Hide()">Show/Hide</button>
+
+<script >
+   
+function Hide(){
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para'); 
+        if(para.style.display != 'none'){
+        para.style.display = 'none';
+        }
+        else{
+        para.style.display = 'block';
+        }
+    }
+
+</script>
+</html>
